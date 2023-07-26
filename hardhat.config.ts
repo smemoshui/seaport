@@ -7,6 +7,7 @@ import { getReportPathForCommit } from "./scripts/utils";
 import { writeReports } from "./scripts/write_reports";
 
 import type { HardhatUserConfig } from "hardhat/config";
+const path = require("path");
 
 import "dotenv/config";
 import "@nomiclabs/hardhat-ethers";
@@ -140,6 +141,9 @@ const config: HardhatUserConfig = {
     verificationNetwork: {
       url: process.env.NETWORK_RPC ?? "",
     },
+    sepolia: {
+      url: "https://eth-sepolia.public.blastapi.io"
+    }
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
