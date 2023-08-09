@@ -103,7 +103,7 @@ contract Seaport is Consideration {
         // Return the name of the contract.
         assembly {
             mstore(0x20, 0x20)
-            mstore(0x47, 0x07536561706f7274)
+            mstore(0x47, 0x534d45)
             return(0x20, 0x60)
         }
     }
@@ -116,6 +116,6 @@ contract Seaport is Consideration {
      */
     function _nameString() internal pure override returns (string memory) {
         // Return the name of the contract.
-        return "Seaport";
+        return "SME";
     }
 }
