@@ -3,7 +3,7 @@ pragma solidity ^0.8.4;
 
 import "forge-std/Script.sol";
 
-import { Seaport } from "seaport-core/src/Seaport.sol";
+import { Seaport } from "contracts/Seaport.sol";
 
 interface ImmutableCreate2Factory {
     function safeCreate2(
@@ -26,7 +26,7 @@ contract SeaportDeployer is Script {
         vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
 
         // CREATE2 salt (20-byte caller or zero address + 12-byte salt).
-        bytes32 salt = 0x0000000000000000000000000000000000000000d4b6fcc21169b803f25d2225;
+        bytes32 salt = 0x0000000000000000000000000000000000000000d4b6fcc21169b803f25d2229;
 
         // Packed and ABI-encoded contract bytecode and constructor arguments.
         // NOTE: The Seaport contract *must* be compiled using the optimized profile config.
