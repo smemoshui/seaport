@@ -709,6 +709,11 @@
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.9.2.tgz#1cb2d5e4d3360141a17dbc45094a8cad6aac16c1"
   integrity sha512-mO+y6JaqXjWeMh9glYVzVu8HYPGknAAnWyxTRhGeckOruyXQMNnlcW6w/Dx9ftLeIQk6N+ZJFuVmTwF7lEIFrg==
 
+"@openzeppelin/contracts@^4.9.3":
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.9.3.tgz#00d7a8cf35a475b160b3f0293a6403c511099364"
+  integrity sha512-He3LieZ1pP2TNt5JbkPA4PNT9WC3gOTOlDcFGJW4Le4QKqwmiNJCRt44APfxMxvq7OugU/cqYuPcSBzOw38DAg==
+
 "@rari-capital/solmate@^6.2.0":
   version "6.4.0"
   resolved "https://registry.npmjs.org/@rari-capital/solmate/-/solmate-6.4.0.tgz"
@@ -5318,10 +5323,11 @@ seaport-core@^0.0.1:
   dependencies:
     seaport-types "^0.0.1"
 
-"seaport-core@github:smemoshui/seaport-core#sme-poc":
+"seaport-core@github:smemoshui/seaport-core#nex-execution-logic":
   version "1.5.0"
-  resolved "https://codeload.github.com/smemoshui/seaport-core/tar.gz/ae397db0dfe5889e367f1aea9c42e164e82add7d"
+  resolved "https://codeload.github.com/smemoshui/seaport-core/tar.gz/336e4cf16bf72f3855a1c13b0c9c3aa2aa9581ef"
   dependencies:
+    "@openzeppelin/contracts" "^4.9.3"
     seaport-types "^0.0.1"
 
 seaport-sol@^1.5.0:
